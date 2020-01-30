@@ -21,7 +21,12 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-\usepackage{url}
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
@@ -39,16 +44,21 @@
   Last Update: January 31, 2019
 } % Your phone number and email
 
+
+
 \begin{document}
 
 \begin{rSection}{INTEREST}
-I am a 1st-year Ph.D. student at the Graduate School of Library, Information and Media Studies, University of Tsukuba.
+I am a 1st-year doctoral student at the Graduate School of Library, Information and Media Studies, University of Tsukuba.
 My current research interest is Human-Machine collaboration in Crowdsourcing for efficient microtask processing.
 Currently, I am studying to propose task assignment algorithms for Human and AI workers satisfying the data quality requirement from requesters.
+  
+I am also interested in developing web applications and, I am fluent in JavaScript, TypeScript, Ruby and Python.
+I have experienced as a part-time engineer and an intern in more than ten companies.
+At present, I am working on the projects of ChainerUI and Crowd4U.
+  
 
-I am also interested in developing web applications. I worked at 10+ companies/institutes as a part-time engineer/intern.
-I am exceptionally fluent in JavaScript/TypeScript/Ruby/Python.
-Proud works are ChainerUI and Crowd4U.
+
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -68,12 +78,12 @@ Proud works are ChainerUI and Crowd4U.
 {\bf University of Tsukuba, Japan. } \hfill {\em April 2019 - Present}
 \\ Ph.D Student,
 \\ Graduate School of Library, Information and Media Studies.
-\\ Advisors: Kei Wakabayashi, Hiromi Morita and Atsuyuki Morishima.
+\\ Advisors: Atsuyuki Morishima, Kei Wakabayashi and Hiromi Morita.
 
 {\bf University of Tsukuba, Japan. } \hfill {\em April 2017 - March 2019}
 \\ Master of Informatics,
 \\ Graduate School of Library, Information and Media Studies.
-\\ Advisors: Hiromi Morita and Atsuyuki Morishima.
+\\ Advisors: Atsuyuki Morishima and Hiromi Morita.
 
 {\bf University of Tsukuba, Japan. } \hfill {\em April 2013 - March 2017} 
 \\ Bachelor of Library and Information Science,
@@ -90,10 +100,13 @@ Proud works are ChainerUI and Crowd4U.
 \\ JST CREST CyborgCrowd Project
 \\\\
 {\bf Engineer (Part-time) } Preferred Networks, Inc. \hfill {\em October 2017 - Present}
-\\ ChainerUI Team (I published ChainerUI)
+\\ ChainerUI Team (I developed the ChainerUI)
 \\\\
-{\bf Engineer (Part-time) } Bit Journey, Inc. \hfill {\em September 2017 - Present} 
+{\bf Engineer (Part-time) } Bit Journey, Inc. \hfill {\em October 2017 - Present} 
 \\\\
+{\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em April 2018 - December 2019} 
+\\ Database Technology Class and Introduction to Data Engineering Class
+\\
 {\bf Intern } Arm Treasure Data inc. \hfill {\em August 2018 - September 2018}
 \\
 {\bf Intern } Preferred Networks, Inc. \hfill {\em August 2017 - September 2017} 
@@ -115,25 +128,25 @@ Proud works are ChainerUI and Crowd4U.
 
 
 
-\begin{rSection}{Teaching Experience}
-{\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em October 2019 - December 2019}
-\\ Database Technology Class
-\\\\
-{\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em April 2019 - July 2019}
-\\ Introduction to Data Engineering Class
-\\\\
-{\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em October 2018 - December 2018}
-\\ Database Technology Class
-\\\\
-{\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em April 2018 - July 2018}
-\\ Introduction to Data Engineering Class
-\end{rSection}
+% \begin{rSection}{Teaching Experience}
+% {\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em October 2019 - December 2019}
+% \\ Database Technology Class
+% \\\\
+% {\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em April 2019 - July 2019}
+% \\ Introduction to Data Engineering Class
+% \\\\
+% {\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em October 2018 - December 2018}
+% \\ Database Technology Class
+% \\\\
+% {\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em April 2018 - July 2018}
+% \\ Introduction to Data Engineering Class
+% \end{rSection}
 
 \begin{rSection}{publications (FIRST AUTHOR)}
 INTERNATIONAL CONFERENCES (REFEREED)
 \begin{enumerate}
   \setcounter{enumi}{0}
-  \item Kobayashi, M., Morita, H., Matsubara, M., Shimizu, N. and Morishima, A.: An Empirical Study on Short- and Long-term Effects of Self-Correction in Crowdsourced Microtasks. Proc. of the sixth AAAI Conference on Human Computation and Crowdsourcing, pp.79－87, Zurich, 2018.7.
+  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. An Empirical Study on Short- and Long-term Effects of Self-Correction in Crowdsourced Microtasks. Proc. of the sixth AAAI Conference on Human Computation and Crowdsourcing(HCOMP), Zurich, 2018.7.
 \end{enumerate}
 
 DOMESTIC CONFERENCES (REFEREED)
@@ -145,15 +158,16 @@ DOMESTIC CONFERENCES (REFEREED)
 DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
 \begin{enumerate}
   \setcounter{enumi}{2}
-  \item Kobayashi, M., Morita, H., Matsubara, M., Shimizu, N. and Morishima, A. Analysis of the effect of reference answer presentation on quality improvement of crowd workers. DEIM 2019.
+  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. Analysis of the effect of reference answer presentation on quality improvement of crowd workers. Forum on Data Engineering
+  and Information Management (DEIM) 2019, Japan.
   % \item クラウドワーカの品質改善における参考回答提示の効果の分析. 小林 正樹，森田 ひろみ，松原 正樹，清水 伸幸，森嶋 厚行. 第11回データ工学と情報マネジメントに関するフォーラム (DEIM)，2019.
-  \item Kobayashi, M., Morita, H., Matsubara, M., Shimizu, N. and Morishima, A. Short-term and long-term effects of presenting reference answers from others in improving the quality of crowd workers. DEIM 2018.
+  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. Short-term and long-term effects of presenting reference answers from others in improving the quality of crowd workers. DEIM 2018, Japan.
   % \item クラウドワーカの品質改善における他者回答提示の短期的・長期的効果. 小林 正樹，森田 ひろみ，松原 正樹，清水 伸幸，森嶋 厚行. 第10回データ工学と情報マネジメントに関するフォーラム (DEIM)，2018
-  \item Kobayashi, M., Shimizu, N. and Morishima, A. A Self-Correcting Microtask Assignment Method Considering Workers Improvement. DEIM 2017.
+  \item Masaki Kobayashi, Nobuyuki Shimizu and Atsuyuki Morishima. A Self-Correcting Microtask Assignment Method Considering Workers Improvement. DEIM 2017, Japan.
   % \item ワーカの成長を考慮した自己補正マイクロタスク割当て手法. 小林 正樹， 清水 伸幸， 森嶋 厚行. 第9回データ工学と情報マネジメントに関するフォーラム (DEIM)，2017
-  \item Kobayashi, M., Fushimi, T., Sato, T. Estimation of User Behavior Model Using Purchasing History. DEIM 2016.
+  \item Masaki Kobayashi, Takayasu Fushimi, Tetsuji Sato. Estimation of User Behavior Model Using Purchasing History. DEIM 2016, Japan.
   % \item 購買履歴を用いたユーザ行動モデルの推定. 小林 正樹， 伏見 卓恭， 佐藤 哲司. 第8回データ工学と情報マネジメントに関するフォーラム (DEIM)，2016
-  \item Kobayashi, M., Fushimi, T., Sato, T. Input Support Method Based on Frequent Patterns of Cooking Recipes. In Proceedings of IEICE technical report, 2015.
+  \item Masaki Kobayashi, Takayasu Fushimi, Tetsuji Sato. An Input Support Method Based on Frequent Patterns of Cooking Recipes. In Proceedings of IEICE technical report, 2015, Japan.
   % \item 調理手順の頻出パターンに基づく入力支援手法の提案. 小林 正樹， 伏見 卓恭， 佐藤 哲司. データ工学研究会 (DE)，2015
 \end{enumerate}
 \end{rSection}
@@ -170,12 +184,13 @@ DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
 
 \begin{rSection}{awards}
 \begin{itemize}
-  \item Enterprise award in WebDB Forum 2019 (LIFULL award and FRONTEO award).
+  \item Enterprise award in WebDB Forum 2019 (LIFULL award and FRONTEO award), Japan.
   \item Repayment Exemption for Students with Excellent Grades, \\JASSO Type 1 scholarship, 1,200,000 JPY, 2019.
-  \item Graduate School of Library, Information and Media Studies \\Provost’s Award, University of Tsukuba, Japan, 2019.
-  \item Student presentation award in DEIM 2017.
-  \item 3rd prize in Git Source Code Contest 2016, HASIGO Inc. \\Title: Developing a WebApp for Checking Graduation Requirements from School Records
-  \item Platinum award, ThinkQuest JAPAN 2013. \\Title: Website to Think about 3.11 Earthquake
+  \item Provost’s Award, Graduate School of Library, \\Information and Media Studies, University of Tsukuba, Japan, 2019.
+  \item Student presentation award in Forum on Data Engineering
+  and \\Information Management (DEIM) 2017, Japan.
+  % \item 3rd prize in Git Source Code Contest 2016, HASIGO Inc. \\Title: Developing a WebApp for Checking Graduation Requirements from School Records
+  \item Platinum award, ThinkQuest JAPAN 2013. %\\Title: Website to Think about 3.11 Earthquake
   \item Grand Prize in ICT Challenge+R 2012, Ritsumeikan University, Japan. \\Title: Book Retrieval System using Google Street View of Original Panorama Images
 \end{itemize}
 
@@ -186,8 +201,8 @@ DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
 \begin{itemize}
   \item \url{https://www.makky.io/}
   \item \url{https://github.com/makky3939}
-  \item \url{https://scholar.google.com/citations?user=6jE4oTYAAAAJ}
-  \item \url{https://speakerdeck.com/makky}
+  % \item \url{https://scholar.google.com/citations?user=6jE4oTYAAAAJ}
+  % \item \url{https://speakerdeck.com/makky}
 \end{itemize}
 \end{rSection}
 
