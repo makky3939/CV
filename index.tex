@@ -22,11 +22,13 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage{xcolor}
-\usepackage[colorlinks = true,
+\usepackage[dvipdfmx,colorlinks = true,
             linkcolor = blue,
             urlcolor  = blue,
             citecolor = blue,
             anchorcolor = blue]{hyperref}
+
+\pagestyle{plain}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
@@ -41,25 +43,23 @@
 \address{
   Tsukuba, Japan.
   \hspace{0.1em}
-  Last Update: February 8, 2019
+  Last Update: March 10, 2021
 } % Your phone number and email
 
 
 
 \begin{document}
 
-\begin{rSection}{Summary}
-I am a 1st-year doctoral student at the Graduate School of Library, Information and Media Studies, University of Tsukuba.
+\begin{rSection}{Introduction}
+I am a doctoral student at the Graduate School of Library, Information and Media Studies, University of Tsukuba.
 My current research interest is Human-Machine collaboration in Crowdsourcing for efficient microtask processing.
-Currently, I am studying to propose task assignment algorithms for Human and AI workers satisfying the data quality requirement from requesters.
-  
+I am currently working to develop task assignment algorithms for Human and AI workers that satisfy the data quality requirement given by requesters.
+
 I am also interested in developing web applications and, I am fluent in JavaScript, TypeScript, Ruby, and Python.
-I have experienced as a part-time engineer and an intern in more than ten companies.
-At present, I am working on the projects of \href{https://github.com/chainer/chainerui}{ChainerUI} and \href{http://crowd4u.org}{Crowd4U}.
-  
-
-
+I have experienced as a part-time engineer and an intern in more than ten companies and research institutions.
+My major past works are \href{https://github.com/chainer/chainerui}{ChainerUI} and \href{https://crowd4u.org}{Crowd4U}.
 \end{rSection}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -113,51 +113,108 @@ At present, I am working on the projects of \href{https://github.com/chainer/cha
 % \\ Introduction to Data Engineering Class
 % \end{rSection}
 
-\begin{rSection}{publications (FIRST AUTHOR)}
-INTERNATIONAL CONFERENCES (REFEREED)
+\begin{rSection}{publications}
+Refereed Journal Articles
 \begin{enumerate}
   \setcounter{enumi}{0}
-  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. An Empirical Study on Short- and Long-term Effects of Self-Correction in Crowdsourced Microtasks. Proc. of the sixth AAAI Conference on Human Computation and Crowdsourcing(HCOMP), Zurich, 2018.7.
+  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu, and Atsuyuki Morishima. Empirical Study on Effects of Self-Correction in Crowdsourced Image Classification Tasks. Human Computation Journal (8:1). 2021, p. 1-24.
 \end{enumerate}
 
-INTERNATIONAL WORKSHOPS, AND POSTERS
+\newpage
+
+Refereed Conference Proceedings
 \begin{enumerate}
-  \setcounter{enumi}{1}
-  \item Masaki Kobayashi, Kei Wakabayashi, Atsuyuki Morishima. Quality-aware Dynamic Task Assignment in Human+AI Crowd. To appear in the poster track of TheWebConf 2020, Taipei.
+  \setcounter{enumi}{0}
+  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu, and Atsuyuki Morishima. An Empirical Study on Short- and Long-Term Effects of Self-Correction in Crowdsourced Microtasks. Proceedings of the Sixth AAAI Conference on Human Computation and Crowdsourcing (HCOMP 2018). Zurich, Switzerland, 2018, p. 79-87.
 \end{enumerate}
 
-
-DOMESTIC CONFERENCES (REFEREED)
+Refereed Domestic Conference (Japanese)
 \begin{enumerate}
-  \setcounter{enumi}{2}
-  \item Masaki Kobayashi, Kei Wakabayashi, Atsuyuki Morishima. Efficient microtask assignment to Human + AI Crowd. WebDB Forum 2019, Japan.
+  \setcounter{enumi}{0}
+  \item 小林 正樹, 若林 啓, 森嶋 厚行. 人間+AIクラウドにおけるマイクロタスク処理の効率化. 第12回Webとデータベースに関するフォーラム (WebDB Forum 2019). 東京都新宿区, 2019, p. 5-8.
 \end{enumerate}
 
-DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
+
+
+Refereed Posters and Workshops
 \begin{enumerate}
-  \setcounter{enumi}{3}
-  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. Analysis of the effect of reference answer presentation on quality improvement of crowd workers. Forum on Data Engineering
-  and Information Management (DEIM) 2019, Japan.
-  % \item クラウドワーカの品質改善における参考回答提示の効果の分析. 小林 正樹，森田 ひろみ，松原 正樹，清水 伸幸，森嶋 厚行. 第11回データ工学と情報マネジメントに関するフォーラム (DEIM)，2019.
-  \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. Short-term and long-term effects of presenting reference answers from others in improving the quality of crowd workers. DEIM 2018, Japan.
-  % \item クラウドワーカの品質改善における他者回答提示の短期的・長期的効果. 小林 正樹，森田 ひろみ，松原 正樹，清水 伸幸，森嶋 厚行. 第10回データ工学と情報マネジメントに関するフォーラム (DEIM)，2018
-  \item Masaki Kobayashi, Nobuyuki Shimizu and Atsuyuki Morishima. A Self-Correcting Microtask Assignment Method Considering Workers Improvement. DEIM 2017, Japan.
-  % \item ワーカの成長を考慮した自己補正マイクロタスク割当て手法. 小林 正樹， 清水 伸幸， 森嶋 厚行. 第9回データ工学と情報マネジメントに関するフォーラム (DEIM)，2017
-  \item Masaki Kobayashi, Takayasu Fushimi, Tetsuji Sato. Estimation of User Behavior Model Using Purchasing History. DEIM 2016, Japan.
-  % \item 購買履歴を用いたユーザ行動モデルの推定. 小林 正樹， 伏見 卓恭， 佐藤 哲司. 第8回データ工学と情報マネジメントに関するフォーラム (DEIM)，2016
-  \item Masaki Kobayashi, Takayasu Fushimi, Tetsuji Sato. An Input Support Method Based on Frequent Patterns of Cooking Recipes. In Proceedings of IEICE technical report, 2015, Japan.
-  % \item 調理手順の頻出パターンに基づく入力支援手法の提案. 小林 正樹， 伏見 卓恭， 佐藤 哲司. データ工学研究会 (DE)，2015
+  \setcounter{enumi}{0}
+  \item Masaki Kobayashi, Kei Wakabayashi, and Atsuyuki Morishima. Quality-Aware Dynamic Task Assignment in Human+AI Crowd. Companion Proceedings of the Web Conference 2020 (WWW '20). Taipei, Taiwan, 2020, p. 118–119. [PDF]
+  \item Munenari Inoguchi, Keiko Tamura, Kousuke Uo, and Masaki Kobayashi. Validation of CyborgCrowd Implementation Possibility for Situation Awareness in Urgent Disaster Response -Case Study of International Disaster Response in 2019-. 2020 IEEE International Conference on Big Data (IEEE HMData 2020). Virtual Conference, 2020.
+  \item Akiko Aizawa, Frederic Bergeron, Junjie Chen, Fei Cheng, Katsuhiko Hayashi, Kentaro Inui, Hiroyoshi Ito, Daisuke Kawahara, Masaru Kitsuregawa, Hirokazu Kiyomaru, Masaki Kobayashi, Takashi Kodama, Sadao Kurohashi, Qianying Liu, Masaki Matsubara, Yusuke Miyao, Atsuyuki Morishima, Yugo Murawaki, Kazumasa Omura, Haiyue Song, Eiichiro Sumita, Shinji Suzuki, Ribeka Tanaka, Yu Tanaka, Masashi Toyoda, Nobuhiro Ueda, Honai Ueoka, Masao Utiyama and Ying Zhong. A System for Worldwide COVID-19 Information Aggregation. Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020. Virtual Conference, 2020.
+  \item Yu Yamashita, Masaki Kobayashi, Kei Wakabayashi, and Atsuyuki Morishima. Dynamic Worker-Task Assignment for High-Quality Task Results with ML Workers. The eighth AAAI Conference on Human Computation and Crowdsourcing (HCOMP2020). Virtual Conference, 2020, 3 pages.
+  \item Kousuke Uo, Masaki Kobayashi, Masaki Matsubara, Yukino Baba, and Atsuyuki Morishima:. Active Learning Strategies for Hierarchical Labeling Microtasks. The 3rd IEEE Workshop on Human-in-the-loop Methods and Human Machine Collaboration in BigData (IEEE HMData 2019). Los Angeles, 2019, p. 4647-4650.
+  \item Masafumi Hayashi, Masaki Kobayashi, Masaki Matsubara, Toshiyuki Amagasa, and Atsuyuki Morishima. Incentive Design for Crowdsourced Development of Selective AI for Human and Machine Data Processing: A Case Study. The 3rd IEEE Workshop on Human-in-the-loop Methods and Human Machine Collaboration in BigData (IEEE HMData 2019). Los Angeles, 2019, p. 4596-4601.
+  \item Masaki Matsubara, Masaki Kobayashi, Atsuyuki Morishima. A Learning Effect by Presenting Machine Prediction as a Reference Answer in Self-correction. The Second IEEE Workshop on Human-in-the-loop Methods and Human Machine Collaboration in BigData (IEEE HMData2018). Seattle, 2018, p. 3522-3528.
 \end{enumerate}
+
+
+
+
+
+
+Non-refereed Domestic Conference (Japanese)
+\begin{enumerate}
+  \setcounter{enumi}{0}
+  \item 小林 正樹, 若林 啓, 森嶋 厚行. 人間+AIクラウドの相互作用によるタスク結果品質の管理手法. 第13回データ工学と情報マネジメントに関するフォーラム (DEIM2021). Virtual Conference, 2021, 8 pages.
+  \item 小林 正樹, 若林 啓, 森嶋 厚行. タスク結果品質を考慮した人間+AIクラウドへのマイクロタスク割り当て. 第12回データ工学と情報マネジメントに関するフォーラム (DEIM2020). Virtual Conference, 2020, 8 pages.
+  \item 山下 裕, 小林 正樹, 若林 啓, 森嶋 厚行. クラウドソーシングにおけるAIを利用したタスク削減手法. 第12回データ工学と情報マネジメントに関するフォーラム (DEIM2020). Virtual Conference, 2020, 7 pages.
+  \item 鵜尾 厚佑, 小林 正樹, 松原 正樹, 馬場 雪乃, 森嶋 厚行. 階層型のラベル付けマイクロタスクにおける能動学習戦略の比較. 第12回データ工学と情報マネジメントに関するフォーラム (DEIM2020). Virtual Conference, 2020, 6 pages.
+  \item 小林 正樹, 森田 ひろみ, 松原 正樹, 清水 伸幸, 森嶋 厚行. マイクロタスクでの自己補正におけるワーカの回答パターン分析. 第11回データ工学と情報マネジメントに関するフォーラム (DEIM2019). 長崎県, 2019, 7 pages.
+  \item 松原 正樹, 小林 正樹, 森嶋 厚行. 機械学習の分類予測に基づく参考回答提示によるクラウドワーカの学習効果. 第11回データ工学と情報マネジメントに関するフォーラム (DEIM2019). 長崎県, 2019, 7 pages.
+  \item 小林 正樹, 森田 ひろみ, 松原 正樹, 清水 伸幸, 森嶋 厚行. クラウドワーカの品質改善における他者回答提示の短期的・長期的効果. 第10回データ工学と情報マネジメントに関するフォーラム (DEIM2018). 福井県, 2018, 8 pages.
+  % \item 小林 正樹, 清水 伸幸, 森嶋 厚行. ワーカの成長を考慮した自己補正マイクロタスク割当て手法. 科学技術振興機構 CREST 3プロジェクト合同シンポジウム (ポスター発表). 茨城県つくば市, 2017, .
+  \item 小林 正樹, 清水 伸幸, 森嶋 厚行. ワーカの成長を考慮した自己補正マイクロタスク割当て手法. 第9回データ工学と情報マネジメントに関するフォーラム (DEIM2017). 岐阜県, 2017, 6 pages.
+  \item 小林 正樹, 伏見 卓恭, 佐藤 哲司. 購買履歴を用いたユーザ行動モデルの推定. 第8回データ工学と情報マネジメントに関するフォーラム (DEIM2016). 福岡, 2016, 5 pages.
+  \item 小林 正樹, 伏見 卓恭, 佐藤 哲司. 調理手順の頻出パターンに基づく入力支援手法の提案. 信学技報 (データ工学研究会, データ工学と食メディア) (230:115). 2015, p. 53-57.
+\end{enumerate}
+
+% INTERNATIONAL CONFERENCES (REFEREED)
+% \begin{enumerate}
+%   \setcounter{enumi}{0}
+%   \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. An Empirical Study on Short- and Long-term Effects of Self-Correction in Crowdsourced Microtasks. Proc. of the sixth AAAI Conference on Human Computation and Crowdsourcing(HCOMP), Zurich, 2018.7.
+% \end{enumerate}
+
+% INTERNATIONAL WORKSHOPS, AND POSTERS
+% \begin{enumerate}
+%   \setcounter{enumi}{1}
+%   \item Masaki Kobayashi, Kei Wakabayashi, Atsuyuki Morishima. Quality-aware Dynamic Task Assignment in Human+AI Crowd. To appear in the poster track of TheWebConf 2020, Taipei.
+% \end{enumerate}
+
+
+% DOMESTIC CONFERENCES (REFEREED)
+% \begin{enumerate}
+%   \setcounter{enumi}{2}
+%   \item Masaki Kobayashi, Kei Wakabayashi, Atsuyuki Morishima. Efficient microtask assignment to Human + AI Crowd. WebDB Forum 2019, Japan.
+% \end{enumerate}
+
+% DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
+% \begin{enumerate}
+%   \setcounter{enumi}{3}
+%   \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. Analysis of the effect of reference answer presentation on quality improvement of crowd workers. Forum on Data Engineering
+%   and Information Management (DEIM) 2019, Japan.
+%   % \item クラウドワーカの品質改善における参考回答提示の効果の分析. 小林 正樹，森田 ひろみ，松原 正樹，清水 伸幸，森嶋 厚行. 第11回データ工学と情報マネジメントに関するフォーラム (DEIM)，2019.
+%   \item Masaki Kobayashi, Hiromi Morita, Masaki Matsubara, Nobuyuki Shimizu and Atsuyuki Morishima. Short-term and long-term effects of presenting reference answers from others in improving the quality of crowd workers. DEIM 2018, Japan.
+%   % \item クラウドワーカの品質改善における他者回答提示の短期的・長期的効果. 小林 正樹，森田 ひろみ，松原 正樹，清水 伸幸，森嶋 厚行. 第10回データ工学と情報マネジメントに関するフォーラム (DEIM)，2018
+%   \item Masaki Kobayashi, Nobuyuki Shimizu and Atsuyuki Morishima. A Self-Correcting Microtask Assignment Method Considering Workers Improvement. DEIM 2017, Japan.
+%   % \item ワーカの成長を考慮した自己補正マイクロタスク割当て手法. 小林 正樹， 清水 伸幸， 森嶋 厚行. 第9回データ工学と情報マネジメントに関するフォーラム (DEIM)，2017
+%   \item Masaki Kobayashi, Takayasu Fushimi, Tetsuji Sato. Estimation of User Behavior Model Using Purchasing History. DEIM 2016, Japan.
+%   % \item 購買履歴を用いたユーザ行動モデルの推定. 小林 正樹， 伏見 卓恭， 佐藤 哲司. 第8回データ工学と情報マネジメントに関するフォーラム (DEIM)，2016
+%   \item Masaki Kobayashi, Takayasu Fushimi, Tetsuji Sato. An Input Support Method Based on Frequent Patterns of Cooking Recipes. In Proceedings of IEICE technical report, 2015, Japan.
+%   % \item 調理手順の頻出パターンに基づく入力支援手法の提案. 小林 正樹， 伏見 卓恭， 佐藤 哲司. データ工学研究会 (DE)，2015
+% \end{enumerate}
 \end{rSection}
+
+\newpage
 
 \begin{rSection}{Work Experience}
 {\bf Research Assistant} University of Tsukuba, Japan. \hfill {\em April 2019 - Present}
-\\ As a Member of the JST CREST \href{https://www.dl.soc.i.kyoto-u.ac.jp/system/wp-content/uploads/2019/03/hcompWS18www.pdf}{CyborgCrowd} Project. It is a Japanese funded research project to integrate crowdsourcing and AI technologies.
+\\ As a Member of the JST CREST \href{https://www.dl.soc.i.kyoto-u.ac.jp/system/wp-content/uploads/2019/03/hcompWS18www.pdf}{CyborgCrowd} Project. It is a Japanese funded research project to integrate crowdsourcing and AI technologies. I am a core member of \href{https://crowd4u.org}{Crowd4U}: public crowdsourcing platform.
 \\\\
 {\bf Engineer (Part-time) } Preferred Networks, Inc. \hfill {\em October 2017 - Present}
 \\ As a Member of the ChainerUI Team. I developed \href{https://github.com/chainer/chainerui}{ChainerUI}. It is a visualization and management tool for Chainer.
-\\\\
-{\bf Engineer (Part-time) } Bit Journey, Inc. \hfill {\em October 2017 - Present} 
+\\
+{\bf Engineer (Part-time) } Bit Journey, Inc. \hfill {\em October 2017 - May 2020} 
 \\
 {\bf Teaching Assistant } University of Tsukuba, Japan. \hfill {\em April 2018 - December 2019} 
 \\ Database Technology Class and Introduction to Data Engineering Class
@@ -174,7 +231,7 @@ DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
 \\
 {\bf Intern } pixiv inc. \hfill {\em March 2015}
 \\
-{\bf Engineer (Part-time) } 3-shake inc. \hfill {\em July　2016 ~ August 2017}
+{\bf Engineer (Part-time) } 3-shake inc. \hfill {\em July 2016 - August 2017}
 \\
 {\bf Engineer (Part-time) } BearTail inc. \hfill {\em May 2014 - March 2015}
 \\
@@ -182,36 +239,61 @@ DOMESTIC CONFERENCES \& WORKSHOPS (NOT REFEREED)
 \end{rSection}
 
 
+
+\begin{rSection}{Patents}
+  \begin{enumerate}
+    \setcounter{enumi}{0}
+    \item 森嶋 厚行, 若林 啓, 小林 正樹. 割当装置及び割当方法. 特願2019-035829.
+  \end{enumerate}
+\end{rSection}
+
+
 \begin{rSection}{research grants}
+{\bf AIP Challenge Program } JST AIP Network Lab, Japan. \hfill {\em August 2020 - March 2021}
+\\1,000,000 JPY
+\\
 {\bf AIP Challenge Program } JST AIP Network Lab, Japan. \hfill {\em August 2019 - March 2020}
 \\1,000,000 JPY
 
 \end{rSection}
 
 
+
+
+
+\begin{rSection}{Teaching Experience}
+  \begin{itemize}
+    \item Teaching Assistant, Database Technology, University of Tsukuba. October 2018 - December 2018, October 2019 - December 2019, October 2020 - December 2020.
+    \item Teaching Assistant, Information Media Laboratory, University of Tsukuba. April 2020 - July 2020.
+    \item Teaching Assistant, Introduction to Data Engineering, University of Tsukuba. April 2018 - July 2018, April 2019 - July 2019, April 2020 - July 2020.
+  \end{itemize}
+\end{rSection}
+
+
 \begin{rSection}{awards}
 \begin{itemize}
-  \item Enterprise Award in WebDB Forum 2019 (LIFULL award and FRONTEO award), Japan.
+  \item Student Presentation Award in Forum on Data Engineering and Information \\ Management (DEIM) 2021, Japan.
+  \item Online Presentation Award in Forum on Data Engineering and Information \\ Management (DEIM) 2020, Japan.
+  \item Presentation Award in WebDB Forum 2019 (LIFULL award and FRONTEO award), 2019.
   \item Repayment Exemption for Students with Excellent Grades, \\JASSO Type 1 scholarship, 1,200,000 JPY, 2019.
   \item Provost’s Award, Graduate School of Library, \\Information and Media Studies, University of Tsukuba, Japan, 2019.
-  \item Student Presentation Award in Forum on Data Engineering
-  and \\Information Management (DEIM) 2017, Japan.
-  % \item 3rd prize in Git Source Code Contest 2016, HASIGO Inc. \\Title: Developing a WebApp for Checking Graduation Requirements from School Records
-  \item Platinum Award, ThinkQuest JAPAN 2013. %\\Title: Website to Think about 3.11 Earthquake
+  \item Student Presentation Award in Forum on Data Engineering and \\Information Management (DEIM) 2017, Japan.
+  \item 3rd prize in Git Source Code Contest 2016, HASIGO Inc. \\Title: Developing a WebApp for Checking Graduation Requirements from School Records
+  \item Platinum Award, ThinkQuest JAPAN 2013. Title: Website to Think about 3.11 Earthquake
   \item Grand Prize in ICT Challenge+R 2012, Ritsumeikan University, Japan. \\Title: Book Retrieval System using Google Street View of Original Panorama Images
 \end{itemize}
 
 \end{rSection}
 
 
-% \begin{rSection}{Links}
-% \begin{itemize}
-%   \item \url{https://www.makky.io}
-%   \item \url{https://github.com/makky3939}
-%   % \item \url{https://scholar.google.com/citations?user=6jE4oTYAAAAJ}
-%   % \item \url{https://speakerdeck.com/makky}
-% \end{itemize}
-% \end{rSection}
+\begin{rSection}{Links}
+\begin{itemize}
+  \item \url{https://www.makky.io}
+  \item \url{https://github.com/makky3939}
+  \item \url{https://scholar.google.com/citations?user=6jE4oTYAAAAJ}
+  \item \url{https://speakerdeck.com/makky}
+\end{itemize}
+\end{rSection}
 
 
 % \begin{rSection}{Carrier Objective}

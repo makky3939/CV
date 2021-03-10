@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 $latex = "find . -type f -name '*.tex' | xargs sed -i '' -e 's/、/，/g' -e 's/。/．/g'; platex -synctex=1 -halt-on-error";
-$latex = "pdflatex -synctex=1 -halt-on-error";
+$latex = "platex -synctex=1 -halt-on-error";
 $bibtex                      = 'upbibtex %O %B';
 $dvipdf                      = 'dvipdfmx %O -o %D %S';
 $makeindex                   = 'mendex -U %O -o %D %S';
